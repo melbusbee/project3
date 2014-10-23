@@ -1,0 +1,64 @@
+[
+ {
+    "Age":"<1-2",
+ "Medical Neglect":5212,
+ "Neglect":157713,
+ "Physcial Abuse":30689,
+ "Psychological Maltreatment":12371,
+ "Sexual Abuse":1660
+ },
+ 
+{
+    "Age":"3-5",
+    "Medical Neglect":2456,
+    "Neglect":111770,
+    "Physcial Abuse":21327,
+    "Psychological Maltreatment":11518,
+    "Sexual Abuse":8802
+    },
+
+{
+    "Age":"6-8",
+    "Medical Neglect":2157,
+    "Neglect":88314,
+    "Physcial Abuse":20883,
+    "Psychological Maltreatment":10331,
+    "Sexual Abuse":10827
+    },
+
+{
+    "Age":"9-11",
+    "Medical Neglect":1925,
+    "Neglect":68383,
+    "Physcial Abuse":17619,
+    "Psychological Maltreatment":9280,
+    "Sexual Abuse":11600
+    },
+    
+{
+    "Age":"12-14",
+    "Medical Neglect":2097,
+    "Neglect":58491,
+    "Physcial Abuse":18308,
+    "Psychological Maltreatment":8229,
+    "Sexual Abuse":16560
+    },
+    
+{
+    "Age":"15-17",
+    "Medical Neglect":1806,
+    "Neglect":44800,
+    "Physcial Abuse":14887,
+    "Psychological Maltreatment":5936,
+    "Sexual Abuse":13133
+    },
+    
+{
+    "Age":"Unknown, Unborn, and 18-21",
+    "Medical Neglect":52,
+    "Neglect":1.770,
+    "Physcial Abuse":831,
+    "Psychological Maltreatment":215,
+    "Sexual Abuse":354
+    }
+]
