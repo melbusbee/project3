@@ -1,0 +1,138 @@
+[
+ {
+   "Age": "Less than 1 year",
+   "Arizona":2094,
+   "Louisiana":1543,
+   "Tennessee":1669,
+   "Average": 1701
+   },
+{
+   "Age": "1 year",
+   "Arizona":699,
+   "Louisiana":558,
+   "Tennessee":544,
+   "Average": 927
+   },
+{
+   "Age": "2 yeas",
+   "Arizona":689,
+   "Louisiana":547,
+   "Tennessee":504,
+   "Average": 931
+   },
+{
+   "Age": "3 years",
+   "Arizona":678,
+   "Louisiana":592,
+   "Tennessee":624,
+   "Average": 911
+   },
+{
+   "Age": "4 years",
+   "Arizona":639,
+   "Louisiana":531,
+   "Tennessee":590,
+   "Average": 887
+   },
+{
+   "Age": "5 years",
+   "Arizona":546,
+   "Louisiana":500,
+   "Tennessee":610,
+   "Average": 856
+   },
+{
+   "Age": "6 years",
+   "Arizona":559,
+   "Louisiana":500,
+   "Tennessee":525,
+   "Average": 800
+   },
+{
+   "Age": "7 years",
+   "Arizona":485,
+   "Louisiana":437,
+   "Tennessee":524,
+   "Average": 738
+   },
+{
+   "Age": "8 years",
+   "Arizona":429,
+   "Louisiana":382,
+   "Tennessee":484,
+   "Average": 678
+   },
+{
+   "Age": "9 years",
+   "Arizona":391,
+   "Louisiana":371,
+   "Tennessee":482,
+   "Average": 630
+
+   },
+{
+   "Age": "10 years",
+   "Arizona":362,
+   "Louisiana":347,
+   "Tennessee":445,
+   "Average": 600
+
+   },
+{
+   "Age": "11 years",
+   "Arizona":355,
+   "Louisiana":340,
+   "Tennessee":447,
+   "Average": 579
+   },
+{
+   "Age": "12 years",
+   "Arizona":335,
+   "Louisiana":343,
+   "Tennessee":502,
+   "Average": 562
+   },
+{
+   "Age": "13 years",
+   "Arizona":360,
+   "Louisiana":356,
+   "Tennessee":461,
+   "Average": 573
+   },
+{
+   "Age": "14 years",
+   "Arizona":383,
+   "Louisiana":340,
+   "Tennessee":441,
+   "Average": 560
+   },
+{
+   "Age": "15 years",
+   "Arizona":406,
+   "Louisiana":316,
+   "Tennessee":402,
+   "Average": 544
+   },
+{
+   "Age": "16 years",
+   "Arizona":373,
+   "Louisiana":311,
+   "Tennessee":368,
+   "Average": 466
+   },
+{
+   "Age": "17 years",
+   "Arizona":223,
+   "Louisiana":134,
+   "Tennessee":292,
+   "Average": 307
+   },
+{
+   "Age": "Other",
+   "Arizona":33,
+   "Louisiana":10,
+   "Tennessee":155,
+   "Average": 59
+   }
+]
+ 
