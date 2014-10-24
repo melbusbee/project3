@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 function makeChart(){
     Highcharts.getOptions().plotOptions.pie.colors = (function () {
-        var colors = ['#369999', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6'],
+        var colors = ['#2c7c7c', '#369999', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6', '#c8e6e6'],
             base = Highcharts.getOptions().colors[0],
             i;
 
@@ -45,7 +45,11 @@ function makeChart(){
                     }
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                style: {
+                padding: 20,
+                fontSize: '14px'
+                },
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
             },
             plotOptions: {
                 pie: {
@@ -59,7 +63,7 @@ function makeChart(){
             },
             series: [{
                 type: 'pie',
-                name: 'What percentage?',
+                name: 'Percentage:',
                 data: [
                     ['Parent',   80.3],
                     {
@@ -105,7 +109,11 @@ function makeChartTwo(){
                     }
             },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            style: {
+                padding: 20,
+                fontSize: '14px'
+                },
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
         plotOptions: {
             pie: {
@@ -127,8 +135,8 @@ function makeChartTwo(){
             name: 'Victim percent',
             innerSize: '50%',
             data: [
-                ['Both parents',     24],
                 ['Mother', 45],
+                ['Both parents',     24],
                 ['Father',   23],
                 ['Mother and other',    7],
                 ['Father and other',       1]
