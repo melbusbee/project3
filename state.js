@@ -5,8 +5,8 @@ var average = [];
 var arizona = [];
 var louisiana =[];
 var tennessee = [];
-
-
+var hampshire =[];
+var oklahoma=[];
 
 function loadDataTwo(){
     
@@ -32,6 +32,9 @@ function parseDataTwo(data){
         tennessee.push(dataObj[i]["Tennessee"]);
         louisiana.push(dataObj[i]["Louisiana"]);
         average.push(dataObj[i]["Average"]);
+        hampshire.push(dataObj[i]["New Hampshire"]);
+        oklahoma.push(dataObj[i]["Oklahoma"]);
+        
         
         /*
         console.log(dataObj[i]["<1"]);
@@ -61,7 +64,8 @@ function parseDataTwo(data){
 buildChart();
 buildChartTenn();
 buildChartLouis();
-buildChartAverage()
+buildChartAverage();
+buildChartOk();
 }
 
 function buildChart(){
@@ -72,7 +76,7 @@ function buildChart(){
             backgroundColor: '#fcfcfc'
         },
         title: {
-            text: 'Arizona: Abuse Trends by Victim Age',
+            text: 'Arizona vs. the average state: Abuse Trends by Victim Age',
             align: 'left',
             x: -10,
             style: {
@@ -104,6 +108,10 @@ function buildChart(){
             }
         },
         tooltip: {
+            style: {
+                padding: 20,
+                fontSize: '14px'
+                },
             shared: true
         },
         plotOptions: {
@@ -120,7 +128,12 @@ function buildChart(){
         series: [{
             name: 'Arizona',
             data: arizona,
-            color: '#369999'
+            color: '#2c7c7c'
+        },
+        {
+            name: 'Average',
+            data: average,
+            color: '#F2CE6D'
         }]
     });
 }
@@ -133,7 +146,7 @@ function buildChartTenn(){
             backgroundColor: '#fcfcfc'
         },
         title: {
-            text: 'Tennessee: Abuse Trends by Victim Age',
+            text: 'Tennessee vs. the average state: Abuse Trends by Victim Age',
             align: 'left',
             x: -10,
             style: {
@@ -165,6 +178,10 @@ function buildChartTenn(){
             }
         },
         tooltip: {
+            style: {
+                padding: 20,
+                fontSize: '14px'
+                },
             shared: true
         },
         plotOptions: {
@@ -181,7 +198,12 @@ function buildChartTenn(){
         series: [ {
             name: 'Tennessee',
             data: tennessee,
-            color: '#5eadad'
+            color: '#86c1c1'
+        },
+        {
+            name: 'Average',
+            data: average,
+            color: '#F2CE6D'
         }]
     });
 }
@@ -194,7 +216,7 @@ function buildChartLouis(){
             backgroundColor: '#fcfcfc'
         },
         title: {
-            text: 'Louisiana: Abuse Trends by Victim Age',
+            text: 'Louisiana vs. the average state: Abuse Trends by Victim Age',
             align: 'left',
             x: -10,
             style: {
@@ -226,6 +248,10 @@ function buildChartLouis(){
             }
         },
         tooltip: {
+            style: {
+                padding: 20,
+                fontSize: '14px'
+                },
             shared: true
         },
         plotOptions: {
@@ -242,7 +268,12 @@ function buildChartLouis(){
         series: [{
             name: 'Louisiana',
             data: louisiana,
-            color: '#86c1c1'
+            color: '#add5d5'
+        },
+        {
+            name: 'Average',
+            data: average,
+            color: '#F2CE6D'
         }]
     });
 }
@@ -287,6 +318,10 @@ function buildChartAverage(){
             }
         },
         tooltip: {
+            style: {
+                padding: 20,
+                fontSize: '14px'
+                },
             shared: true
         },
         plotOptions: {
@@ -307,3 +342,75 @@ function buildChartAverage(){
         }]
     });
 }
+
+
+
+
+function buildChartOk(){
+    $('#oklahoma').highcharts({
+        chart: {
+            type: 'area',
+            plotBackgroundColor: '#FCFCFC',
+            backgroundColor: '#fcfcfc'
+        },
+        title: {
+            text: 'Snapshot of average state: Oklahoma',
+            align: 'left',
+            x: -10,
+            style: {
+                    fontSize: '17px',
+                    fontWeight: 'bold',
+                    fontFamily: 'Oswald',
+                    color: '#444444'
+                    }
+        },
+        xAxis: {
+            labels: {
+                rotation: -45,
+            },
+            categories: ageYear,
+            tickmarkPlacement: 'on',
+            title: {
+                text: 'Victim Age',
+                style: {
+                    fontWeight: 'bold'
+                }
+            }
+        },
+        yAxis: {
+            endOnTick: true,
+            maxPadding: 1.5,
+            title: {
+                text: 'No. of Victims',
+                style: {
+                    fontWeight: 'bold'
+            }
+            }
+        },
+        tooltip: {
+            style: {
+                padding: 20,
+                fontSize: '14px'
+                },
+            shared: true
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [
+        {
+            name: 'Oklahoma',
+            data: oklahoma,
+            color: '#faecc7'
+        }]
+    });
+}
+
